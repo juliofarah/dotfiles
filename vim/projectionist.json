@@ -1,0 +1,19 @@
+{
+  "app/assets/javascripts/src/*.jsx": {
+    "alternate": "app/assets/javascripts/tests/{}_test.jsx",
+    "type": "source"
+  },
+  "app/assets/javascripts/tests/*_test.jsx": {
+    "alternate": "app/assets/javascripts/src/{}.jsx",
+    "type": "test"
+  },
+  "app/*.rb": {
+    "alternate": "spec/{}_spec.rb",
+    "type": "source"
+  },
+  "spec/*_spec.rb": {
+    "alternate": "app/{}.rb",
+    "type": "test"
+  }
+}
+

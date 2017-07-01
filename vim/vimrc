@@ -1,0 +1,115 @@
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+set foldmethod=manual
+call vundle#begin()
+" 
+syntax enable
+set background=dark
+set expandtab
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+set number
+set list
+set hlsearch
+set rnu
+set nowrap
+set guifont=Monaco:h12
+set colorcolumn=80 
+
+" visual mode: don't deselect text when identing
+vnoremap > >gv
+vnoremap < <gv
+
+let mapleader = "\<Space>"
+
+" leader y as yank to OS clipboard
+vmap <leader>y "+y
+" leader leader as :nohlsearch
+map <leader><space> :nohlsearch<CR>
+
+" leader z to open all folds
+vmap <leader>z zR
+
+" leader F9 to toggle folds
+nnoremap <F9> za
+
+" leader <F6> to toggle syntastic checker
+nnoremap <F6> :SyntasticToggleMode
+
+" reload vim
+map <silent> <leader>r :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+" set mapping to navigate between open split windows
+noremap <C-J> <C-W>j<C-W>_
+noremap <C-k> <C-W>k<C-W>_
+noremap <C-h> <C-W>h<C-W>_
+noremap <C-l> <C-W>l<C-W>_
+
+" set leader w as :w
+noremap <leader>w :w<CR>
+
+" set leader q as :q
+noremap <leader>q :q<CR>
+
+" config for 'scrooloose/syntastic'
+let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_open = 0
+
+" config for 'scrooloose/nerdtree'
+map <F2> :NERDTreeToggle<CR>
+map <F3> :NERDTreeFind<CR>
+
+" config for 'janko-m/vim-test'
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+let test#strategy = "dispatch"
+let test#ruby#rspec#options = "--color --format doc"
+
+
+" config for 'kien/ctrlp.vim'
+let g:ctrlp_by_filename = 1
+let g:ctrlp_max_files = 0
+let g:ctrlp_working_path_mode = 'raw'
+" Ignores entries specified in .gitignore.
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others | grep -v "^\..*$"'],
+    \ 2: ['.hg', 'hg --cwd %s locate -I .']
+    \ },
+  \ 'fallback': 'find %s -type f'
+  \ }
+
+" config for 'tpope/vim-projectionist'
+
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+"Plugin 'scrooloose/syntastic'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'tpope/vim-sensible'
+Plugin 'Raimondi/delimitMate'
+Plugin 'ervandew/supertab'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'ap/vim-css-color'
+Plugin 'janko-m/vim-test'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-projectionist'
+Plugin 'kien/ctrlp.vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'terryma/vim-multiple-cursors'
+
+
+colorscheme janah
+
+call vundle#end()
+filetype plugin indent on
+
+

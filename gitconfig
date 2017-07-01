@@ -1,0 +1,43 @@
+ [user]
+name = Julio Farah
+email = julio.farah@gmail.com
+
+[github]
+user = juliofarah
+
+[alias]
+co = checkout
+grep = grep -Ii
+g = grep --break --heading --line-number
+
+[core]
+editor = vim
+excludesfile = ~/.gitignore_global
+autocrlf = input
+
+[color]
+ui = true
+branch = auto
+diff = auto
+status = auto
+
+[color "branch"]
+current = red reverse
+local = blue
+remote = green
+
+[color "diff"]
+meta = yellow bold
+frag = magenta bold
+old = red bold
+new = green bold
+
+[color "status"]
+added = yellow
+changed = green
+untracked = cyan
+
+[credential]
+helper = osxkeychain
+[push]
+default = matching

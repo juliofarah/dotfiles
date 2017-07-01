@@ -1,0 +1,66 @@
+# vim: ft=shell syntax=sh
+
+# update
+
+# upgrade
+
+tap homebrew/dupes
+tap homebrew/versions
+
+# Make sure we’re using the latest Homebrew
+update
+
+# Upgrade any already-installed formulae
+upgrade
+
+install vim --override-system-vi
+install macvim
+link macvim
+install zsh zsh-completions
+install git
+
+# install ansible
+
+# Install other useful binaries
+install ack
+# install curl
+# install gzip
+# install p7zip
+install tig
+
+install homebrew/dupes/grep
+
+# dependecies for ruby
+install openssl libyaml
+
+# node with npm
+install node
+
+# Cask files
+# taps for casks
+tap caskroom/cask
+tap caskroom/fonts
+tap caskroom/versions
+
+install caskroom/cask/brew-cask
+
+cask install slate
+cask install iterm2
+cask install slack
+
+cask install google-chrome
+cask install font-source-code-pro
+
+# other tools
+cask install screenhero
+cask install postgres
+
+# non priority stuff
+# cask install firefox
+cask install vlc
+cask install dropbox
+
+# cask install virtualbox
+# cask install vagrant
+
+cleanup
