@@ -15,7 +15,7 @@ set list
 set hlsearch
 set rnu
 set nowrap
-set guifont=Monaco:h12
+set guifont=Monaco:h15
 set colorcolumn=80 
 
 " visual mode: don't deselect text when identing
