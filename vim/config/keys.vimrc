@@ -5,6 +5,7 @@ vnoremap < <gv
 let mapleader = "\<Space>"
 
 " leader y as yank to OS clipboard
+" original keys: "*y
 vmap <leader>y "+y
 map <leader><space> :nohlsearch<CR>
 
@@ -21,6 +22,9 @@ noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
 
 " config for 'scrooloose/nerdtree'
-map <F2> :NERDTreeToggle<CR>
-map <F3> :NERDTreeFind<CR>
+map <F10> :NERDTreeToggle<CR>
+map <F11> :NERDTreeFind<CR>
 
+map <C-s>e :SyntasticCheck eslint<CR>
+map <C-s>r :SyntasticCheck rubocop<CR>
+map <C-s>s :SyntasticReset<CR>

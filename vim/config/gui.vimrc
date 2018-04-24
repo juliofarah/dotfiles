@@ -8,6 +8,6 @@ set hlsearch
 set rnu
 set nowrap
 set guifont=Monaco:h15
-set colorcolumn=80 
+set colorcolumn=80
 
 colorscheme janah

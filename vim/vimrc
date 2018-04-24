@@ -12,6 +12,7 @@ source $HOME/.vim/config/gui.vimrc
 source $HOME/.vim/config/keys.vimrc
 source $HOME/.vim/config/rainbow-parentheses.config.vimrc
 source $HOME/.vim/config/vim-test.config.vimrc
+source $HOME/.vim/config/syntastic.config.vimrc
 
 call vundle#end()
 filetype plugin indent on
