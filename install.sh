@@ -15,7 +15,6 @@ function backup_old_configuration() {
   for file in $files; do
     if [ -f "$file" ]
     then
-      #change to MV
       cp $file old_dotfiles/
     fi
   done
@@ -44,15 +43,10 @@ function symlink_oh_my_zsh() {
 echo "== Symlinking oh-my-zsh aliases =="
 symlink_oh_my_zsh
 
-# function install_ruby_and_rvm() {
-#   echo "gem: --no-document" >> ~/.gemrc
-#   curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails
-# }
-
-# echo "== Installing ruby and rvm =="
-# install_ruby_and_rvm
-
 ln -s $dir/slate ~/.slate
+ln -s $dir/gitconfig ~/.gitconfig
+ln -s $dir/gitconfig_global ~/.gitconfig_global
+ln -s $dir/karabiner.json ~/.karabiner.json
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ln -s $dir/vim/colors .vim/colors

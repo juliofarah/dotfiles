@@ -23,9 +23,6 @@ install git
 
 # Install other useful binaries
 install ack
-# install curl
-# install gzip
-# install p7zip
 install tig
 
 install homebrew/dupes/grep
@@ -49,18 +46,10 @@ cask install iterm2
 cask install slack
 
 cask install google-chrome
-cask install font-source-code-pro
 
 # other tools
-cask install screenhero
-cask install postgres
 
-# non priority stuff
-# cask install firefox
-cask install vlc
 cask install dropbox
 
-# cask install virtualbox
-# cask install vagrant
 
 cleanup
