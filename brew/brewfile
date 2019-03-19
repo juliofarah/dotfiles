@@ -43,13 +43,12 @@ install caskroom/cask/brew-cask
 
 cask install slate
 cask install iterm2
-cask install slack
+#cask install slack
 
-cask install google-chrome
+#cask install google-chrome
 
 # other tools
 
-cask install dropbox
-
+#cask install dropbox
 
 cleanup

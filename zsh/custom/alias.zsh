@@ -33,4 +33,13 @@ alias gst='git status'
 alias gpom='git push origin master'
 alias gpr="git pull --rebase"
 
-alias ctags='ctags -R --exclude=@.ctagsignore .'
+alias run-gateway-api='goto gateway-api && nvm use 8.11 && make compose && make server'
+alias debug-gateway-api='goto gateway-api && make compose-up-base && make debug'
+
+alias run-app-api=' goto app-api && nvm use 6.1 && make server'
+
+alias run-segment-app='goto app && nvm use 8.11 && yarn dev -- --api=localhost'
+alias gpom='git push origin master'
+alias ag='ag --path-to-ignore ~/.agignore'
+alias whoknows='cat ~/Desktop/whoknows.txt | pbcopy'
+alias good-morning='sh ./good-morning.sh'

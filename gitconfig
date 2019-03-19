@@ -41,3 +41,5 @@ untracked = cyan
 helper = osxkeychain
 [push]
 default = matching
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

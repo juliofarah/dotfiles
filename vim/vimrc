@@ -6,13 +6,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set foldmethod=manual
 call vundle#begin()
 
-source $HOME/.vim/config/plugins.vimrc
-source $HOME/.vim/config/ctrlp.config.vimrc
-source $HOME/.vim/config/gui.vimrc
-source $HOME/.vim/config/keys.vimrc
-source $HOME/.vim/config/rainbow-parentheses.config.vimrc
-source $HOME/.vim/config/vim-test.config.vimrc
-source $HOME/.vim/config/syntastic.config.vimrc
+source $HOME/dev/dotfiles/vim/config/plugins.vimrc
+source $HOME/dev/dotfiles/vim/config/ctrlp.config.vimrc
+source $HOME/dev/dotfiles/vim/config/gui.vimrc
+source $HOME/dev/dotfiles/vim/config/keys.vimrc
+source $HOME/dev/dotfiles/vim/config/rainbow-parentheses.config.vimrc
+source $HOME/dev/dotfiles/vim/config/vim-test.config.vimrc
+source $HOME/dev/dotfiles/vim/config/syntastic.config.vimrc
 
 call vundle#end()
 filetype plugin indent on
