@@ -20,8 +20,4 @@ if [ "$branch_name" != "master" ]; then
 fi
 
 echo "popping stash"
-git stash pop
-
-
-
-
+git stash pop 
