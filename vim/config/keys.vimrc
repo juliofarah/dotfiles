@@ -22,8 +22,8 @@ noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
 
 " config for 'scrooloose/nerdtree'
-map <F10> :NERDTreeToggle<CR>
-map <F11> :NERDTreeFind<CR>
+map <F2> :NERDTreeToggle<CR>
+map <F3> :NERDTreeFind<CR>
 
 map <C-s>e :SyntasticCheck eslint<CR>
 map <C-s>r :SyntasticCheck rubocop<CR>
