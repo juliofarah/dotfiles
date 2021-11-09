@@ -10,4 +10,4 @@ set nowrap
 set guifont=Monaco:h15
 set colorcolumn=80
 
-colorscheme janah
+" colorscheme basic-light

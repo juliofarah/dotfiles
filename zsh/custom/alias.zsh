@@ -31,3 +31,6 @@ alias gpr="git pull --rebase"
 
 alias gpom='git push origin master'
 alias ag='ag --path-to-ignore ~/.agignore'
+
+alias morning='gco master && gpr origin master && nvm use && yarn'
+alias curl='noglob curl'
