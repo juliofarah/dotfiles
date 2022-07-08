@@ -13,11 +13,11 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
-install vim --override-system-vi
-install macvim
-link macvim
-install zsh zsh-completions
-install git
+# install vim --override-system-vi
+# install macvim
+# link macvim
+# install zsh zsh-completions
+# install git
 
 # install ansible
 
@@ -28,21 +28,20 @@ install tig
 install homebrew/dupes/grep
 
 # dependecies for ruby
-install openssl libyaml
+# install openssl libyaml
 
 # node with npm
-install node
 
 # Cask files
 # taps for casks
-tap caskroom/cask
-tap caskroom/fonts
-tap caskroom/versions
+# tap caskroom/cask
+# tap caskroom/fonts
+# tap caskroom/versions
 
-install caskroom/cask/brew-cask
+# install caskroom/cask/brew-cask
 
-cask install slate
-cask install iterm2
+# cask install slate
+# cask install iterm2
 #cask install slack
 
 #cask install google-chrome
