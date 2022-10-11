@@ -26,4 +26,6 @@ leader key is mapped to ``[space]`` to allow ``[space] + w`` and ``[space] + q``
 ###colorscheme
 atom-dark-256
 
-A new
+A new test
+
+
