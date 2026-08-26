@@ -11,7 +11,7 @@ function backup_old_configuration() {
     mkdir old_dotfiles
   fi
 
-  local files=".vimrc .zshrc .gitconfig .gitignore_global"
+  local files=".vimrc .zshrc"
   for file in $files; do
     if [ -f "$file" ]
     then
@@ -22,11 +22,6 @@ function backup_old_configuration() {
 
 echo "== Backing up old configuration (if any) =="
 backup_old_configuration
-
-echo ""
-
-echo "== Loading /brew/install.sh =="
-bash $dir/brew/install.sh
 
 echo ""
 
@@ -42,11 +37,6 @@ function symlink_oh_my_zsh() {
 }
 echo "== Symlinking oh-my-zsh aliases =="
 symlink_oh_my_zsh
-
-ln -s $dir/slate ~/.slate
-ln -s $dir/gitconfig ~/.gitconfig
-ln -s $dir/gitconfig_global ~/.gitconfig_global
-ln -s $dir/karabiner.json ~/.karabiner.json
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ln -s $dir/vim/colors .vim/colors
